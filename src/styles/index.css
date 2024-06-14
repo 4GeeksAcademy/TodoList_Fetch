@@ -1,12 +1,80 @@
+body{
+    background-color: rgb(199, 224, 247);
+}
 
-/* 
+.todoList{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.title{
+margin-top: 20px;
+font-size: 70px;
+font-family:Arial, Helvetica, sans-serif;
+color: rgb(58, 81, 88);
+}
 
-*/
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    width: 550px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+li{
+font-size: 25px;
+display: flex;
+text-align: left;
+}
+
+.list-group-item {
+    color: rgb(88, 87, 87);
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom{
+    width: 70px;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 10px;
+    font-size: 15px;
+    color: rgb(167, 167, 167);
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+input{
+border: none;
+}
+
+.trash-icon{
+margin-left: auto;
+}
+
+.trash-icon-container {
+    display: none;
+}
+
+.list-group-item:hover .trash-icon-container {
+    display: block;
+}
+.check-icon{
+    margin-right: 20px;
+}
+.delete-button{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: rgb(81, 107, 131);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
